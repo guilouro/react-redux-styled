@@ -7,4 +7,4 @@ export default () => (
     <Provider store={configureStore()}>
         <Routes />
     </Provider>
-)
+);

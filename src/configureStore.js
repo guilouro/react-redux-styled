@@ -15,8 +15,8 @@ export default (initialState) => {
         module.hot.accept('./reducers', () => {
             const nextReducer = require('./reducers'); // eslint-disable-line
             store.replaceReducer(nextReducer);
-        })
+        });
     }
 
     return store;
-}
+};

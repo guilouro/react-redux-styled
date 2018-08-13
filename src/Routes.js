@@ -5,9 +5,9 @@ import Main from './components/Main';
 const Routes = () => (
     <HashRouter>
         <Switch>
-            <Route path="/" exact={true} component={Main} />
+            <Route path="/" exact component={Main} />
         </Switch>
-    </ HashRouter>
-)
+    </HashRouter>
+);
 
 export default Routes;
