@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 30vh;
-    /* justify-content: center; */
     align-items: center;
     color: #fff;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",

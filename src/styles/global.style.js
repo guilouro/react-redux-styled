@@ -7,10 +7,6 @@ export default () => injectGlobal`
         box-sizing: border-box;
     }
 
-    html, body, #main {
-        height: 100%;
-    }
-
     body {
         background-color: #0186b2;
     }

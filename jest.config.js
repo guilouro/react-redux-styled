@@ -1,11 +1,13 @@
 module.exports = {
-    testEnvironment: 'node',
+    testEnvironment: 'jsdom',
     testPathIgnorePatterns: [
         '/node_modules/',
         './tests/setup.js',
         './tests/_utils',
         './webpack/',
     ],
+    verbose: true,
+    testURL: 'http://localhost/',
     setupTestFrameworkScriptFile: './tests/setup.js',
     snapshotSerializers: ['enzyme-to-json/serializer'],
     collectCoverage: true,
@@ -14,6 +16,7 @@ module.exports = {
     ],
     coveragePathIgnorePatterns: [
         'src/styles/global.style.js',
+        'src/app.js',
     ],
     coverageThreshold: {
         global: {
