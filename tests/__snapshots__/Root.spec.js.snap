@@ -12,6 +12,13 @@ exports[`<Root /> Should render correctly 1`] = `
     }
   }
 >
+  <Favicon
+    alertCount={null}
+    animated={true}
+    animationDelay={500}
+    keepIconLink={[Function]}
+    url={Object {}}
+  />
   <Routes />
 </Provider>
 `;
