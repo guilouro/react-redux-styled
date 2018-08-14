@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Main from '../../src/components/Main';
+import Routes from '../src/Routes';
 
-describe('<Main />', () => {
+describe('<Routes />', () => {
     it('Should render correctly', () => {
-        const wrapper = shallow(<Main />);
+        const wrapper = shallow(<Routes />);
         expect(wrapper).toMatchSnapshot();
     });
 });

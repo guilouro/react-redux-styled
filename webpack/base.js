@@ -23,22 +23,22 @@ const config = {
                 },
             },
             {
-                test: /\.(jpg|svg)$/,
+                test: /\.(jpe?g|ttf|eot|svg|png|woff(2)?)(\?[a-z0-9=&.]*)?$/,
                 use: {
-                    loader: 'file-loader?name=/images/[name].[ext]',
+                    loader: 'file-loader',
                 },
             },
-        ]
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
         }),
         new MiniCssExtractPlugin({
-            filename: "'css/[name]_[contenthash].css'",
-            chunkFilename: "css/[id].css",
-        })
+            filename: 'css/[name]_[contenthash].css',
+            chunkFilename: 'css/[id].css',
+        }),
     ],
-}
+};
 
 export default config;

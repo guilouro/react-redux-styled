@@ -6,4 +6,12 @@ export default () => injectGlobal`
         padding: 0;
         box-sizing: border-box;
     }
+
+    html, body, #main {
+        height: 100%;
+    }
+
+    body {
+        background-color: #0186b2;
+    }
 `;

@@ -4,12 +4,16 @@ module.exports = {
         '/node_modules/',
         './tests/setup.js',
         './tests/_utils',
+        './webpack/',
     ],
     setupTestFrameworkScriptFile: './tests/setup.js',
-    snapshotSerializers: ["enzyme-to-json/serializer"],
+    snapshotSerializers: ['enzyme-to-json/serializer'],
     collectCoverage: true,
+    collectCoverageFrom: [
+        'src/**/*.js',
+    ],
     coveragePathIgnorePatterns: [
-        '/tests/',
+        'src/styles/global.style.js',
     ],
     coverageThreshold: {
         global: {
@@ -18,5 +22,9 @@ module.exports = {
             lines: 100,
             statements: 100,
         },
+    },
+    moduleNameMapper: {
+        '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+          '<rootDir>/tests/__mocks__/fileMock.js',
     },
 };

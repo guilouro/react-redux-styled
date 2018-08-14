@@ -1,7 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should render correctly Should render correctly 1`] = `
-<h1>
-  Hello
-</h1>
+exports[`<Main /> Should render correctly 1`] = `
+<styled.section>
+  <img
+    alt="React"
+    src={Object {}}
+  />
+  <styled.div>
+    React
+    <span>
+      App
+    </span>
+  </styled.div>
+  <i>
+    is running...
+  </i>
+</styled.section>
 `;
