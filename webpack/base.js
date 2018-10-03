@@ -1,6 +1,5 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const config = {
     entry: [
@@ -33,10 +32,6 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html',
-        }),
-        new MiniCssExtractPlugin({
-            filename: 'css/[name]_[contenthash].css',
-            chunkFilename: 'css/[id].css',
         }),
     ],
 };
